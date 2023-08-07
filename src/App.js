@@ -9,8 +9,8 @@ function Homepage(){
     <>
     <Navbar />
     {/* <Home/> */}
-    <About />
-    <Work/>
+    {/* <About />
+    <Work/> */}
     </>
   );
 }
