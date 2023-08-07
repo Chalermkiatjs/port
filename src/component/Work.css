@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-work{
+    height: 400px;
+    border: 1px solid red;
+    
+}
+
+.grid-container-work{
+    display: grid;
+    height: 400px;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid red;
+}
+
+@media screen and (max-width:900px){
+    .grid-container-work{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+.grid-items-work{
+    display: block;
+    height: 200px;
+    width: 200px;
+    color: black;
+    border: 1px solid red;
+    margin: auto;
+}

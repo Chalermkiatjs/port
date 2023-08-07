@@ -1,0 +1,39 @@
+.nav-container{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 102px;
+  }
+  
+  .logo{
+    
+    font-size: 20px;
+    border: solid red;
+  }
+  
+  .nav-menu ul{
+    display: flex;
+    border: solid red;
+    /* text-align: center; */
+  }
+  
+  .nav-menu li{
+    margin: 0 20px;
+    list-style-type: none;
+    font-size: 18px;
+  }
+  
+  .nav-menu li a{
+    color: white;
+    text-decoration: none;
+    
+  }
+
+@media screen and (max-width:600px) {
+  .nav-menu ul{
+    display: none;
+  }
+}
