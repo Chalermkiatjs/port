@@ -8,9 +8,10 @@ body{
 }
 
 .container-about{
+    display: flex;
     height: 600px;
     width: 100%;
-    border: 1px solid red;
+    justify-content: center;
 }
 
 .grid-container-about{
@@ -18,55 +19,76 @@ body{
     height: 600px;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    border: 1px solid red;
+    align-items: center;
 }
 
 .grid-items-about{
     display: block;
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: auto;
     color: black;
-    border: 1px solid red;
-    margin: auto;
 }
 
 .grid-items-about h1{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 0;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .grid-items-about p {
-    margin-bottom: 30px;
-    margin-left: 20px;
-    
+    font-size: 20px;
+    margin-bottom: 50px;
+    /* margin-left: 20px; */
+    /* margin-right: 120px; */
+    padding-right: 70px;
 }
 
 .grid-items-about a {
-    margin: 20px;
+    margin-left: 0;
 
 }
 
 .grid-items-about img{
     display: block;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     object-position: 0 70%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    box-shadow: 10px 10px 50px rgb(102, 102, 102);
 }
 
 .btn{
-    background-color: black;
-    padding: 8px 10px;
-    border-radius: 10px;
-    color: white;
+    border: 5px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
     text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .btn:hover{
-    color: rgb(138, 138, 138);
-    transition: 0.3s;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    
+}
+
+@media screen and (max-width:1016px) {
+    
+    .grid-items-about {
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .grid-items-about p {
+        
+        padding-left: 70px;
+    }
 }
