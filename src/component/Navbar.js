@@ -10,7 +10,7 @@ function Navbar() {
     return(
         <section>
             <div className="nav-container">
-                <div className="logo">Navbar</div>
+                <div className="logo">CHALERMKIAT</div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li><a href="Home.js" onClick={closeMenu}>Home</a></li>
                     <li><a href="About.js" onClick={closeMenu}>About me</a></li>

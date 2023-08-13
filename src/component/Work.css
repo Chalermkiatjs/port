@@ -10,7 +10,7 @@
 .container-work{
     height: 400px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-items: center;
     
 }
@@ -19,7 +19,7 @@
     display: flex;
     height: 400px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
     background-color: black;
 }
@@ -47,14 +47,14 @@
 
 .flex-items-header{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     cursor: default;
     height: 200px;
     width: 500px;
     color: white;
     /* border: 1px solid red; */
     margin-top: auto;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
     justify-content: center;
     
 }
