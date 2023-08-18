@@ -1,43 +1,70 @@
-import "./contact.css"
-import { SlSocialFacebook, SlSocialGithub, SlSocialInstagram } from "react-icons/sl";
+import "./contact.css";
+import {
+  SlSocialFacebook,
+  SlSocialGithub,
+  SlSocialInstagram,
+} from "react-icons/sl";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 
-function Contact(){
+function Contact() {
+  return (
+    <section>
+      <div className="container-contact" id="contact">
+        <div className="flex-header-contact">
+          <h1>CONTACT</h1>
+        </div>
 
-    return(
-        <section>
-            <div className="container-contact">
-                <div className="flex-header-contact">
-                    <h1>CONTACT</h1>
-                </div>
-
-                    <div className="flex-container-contact">  
-                        <div className="flex-items-contact">
-                            <SlSocialFacebook/>
-                            <p>Chalermkiat Jaisuk</p>
-                        </div>
-                        <div className="flex-items-contact">
-                            <SlSocialInstagram/>
-                            <p>cha_lermm</p>
-                        </div>
-                        <div className="flex-items-contact">
-                            <SlSocialGithub/>
-                            <p>https://github.com/Chalermkiatjs</p>
-                        </div>
-                        <div className="flex-items-contact">
-                            <AiOutlineMail/>
-                            <p>chalermkiat.js@gmail.com</p>
-                        </div>
-                        <div className="flex-items-contact">
-                            <BsTelephone/>
-                            <p>095-525-4411</p>
-                        </div>
-                    </div>
+        <div className="flex-container-contact">
+          <div className="flex-items-contact">
+            <a
+              href="https://www.facebook.com/chalermkiat.jaisuk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SlSocialFacebook />
+              <p>Facebook</p>
+            </a>
+          </div>
+          <div className="flex-items-contact">
+            <a
+              href="https://www.instagram.com/cha_lermm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SlSocialInstagram />
+              <p>Instagram</p>
+            </a>
+          </div>
+          <div className="flex-items-contact">
+            <a
+              href="https://github.com/Chalermkiatjs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SlSocialGithub />
+              <p>Github</p>
+            </a>
+          </div>
+          <div
+            className="flex-items-contact"
+            onClick={() => "mailto:chalermkiat.js@gmail.com"}
+          >
+            <div>
+              <AiOutlineMail />
+              <p>G-mail</p>
             </div>
-        </section>
-    );
-    
+          </div>
+          <div className="flex-items-contact">
+            <div>
+              <BsTelephone />
+              <p>095-525-4411</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;

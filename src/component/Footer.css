@@ -9,6 +9,13 @@ footer{
 }
 
 footer p{
-   
+    transition: 0.5s;
     padding-top: 15px;
+}
+
+@media screen and (max-width:500px){
+    p{
+        font-size: 10px;
+        transition: 0.5s;
+    }
 }

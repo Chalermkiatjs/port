@@ -1,26 +1,24 @@
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import './App.css';
-import Navbar from './component/Navbar'
-import Home from './component/Home'
-import About from './component/About'
-import Work from './component/Work'
-import Contact from './component/Contact'
-import Footer from './component/Footer';
+import Navbar from "./component/Navbar";
+import Home from "./component/Home";
+import About from "./component/About";
+import Work from "./component/Work";
+import Contact from "./component/Contact";
+import Footer from "./component/Footer";
 
-
-function Homepage(){
+function Homepage() {
   return (
     <>
       <Navbar />
-      <Home/>
+      <Home />
       <About />
-      <Work/>
-      <Contact/>
+      <Work />
+      <Contact />
       <Footer />
     </>
   );
 }
-
-
 
 export default Homepage;

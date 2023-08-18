@@ -1,0 +1,19 @@
+.size{
+    height: 200px;
+    width: auto;
+
+}
+
+h1{
+    font-weight: bold;
+}
+
+.code-hover {
+    transition: 0.5s;
+}
+
+.code-hover:hover{
+    cursor: pointer;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}

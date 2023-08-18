@@ -1,14 +1,63 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-// import Homepage from './App';
-import reportWebVitals from './reportWebVitals';
-import Homepage from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "bootstrap/dist/css/bootstrap.min.css";
+import reportWebVitals from "./reportWebVitals";
+import Homepage from "./App";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import Coding from "./component/Coding";
+import Production from "./component/Production";
+import Motion from "./component/motion";
+
+import Home from "./component/Home";
+import Contact from "./component/Contact";
+import Work from "./component/Work";
+import About from "./component/About";
+import Visual from "./component/Visual";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Homepage />,
+  },
+  {
+    path: "home",
+    element: <Home />,
+  },
+  {
+    path: "about",
+    element: <About />,
+  },
+  {
+    path: "work",
+    element: <Work />,
+  },
+  {
+    path: "contact",
+    element: <Contact />,
+  },
+  {
+    path: "production",
+    element: <Production />,
+  },
+  {
+    path: "coding",
+    element: <Coding />,
+  },
+  {
+    path: "motion",
+    element: <Motion />,
+  },
+  {
+    path: "visual",
+    element: <Visual />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Homepage />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

@@ -8,13 +8,12 @@ h1{
     font-weight: bold;
 }
 
-.product-hover {
+.motion-hover {
     transition: 0.5s;
 }
 
 
-
-.view-product{
+.view-motion{
     display: flex;
     position: absolute;
     width: 100%;
@@ -28,19 +27,17 @@ h1{
     transition: 0.5s;
 }
 
-
-
-.product-hover:hover {
+.motion-hover:hover{
     cursor: pointer;
     transform: translateY(-25px);
     transition: 0.5s;
 }
 
-.product-hover:hover img{
+.motion-hover:hover img{
     opacity: 0.7;
 }
 
-.product-hover:hover .view-product{
+.motion-hover:hover .view-motion{
 
     transition: 0.5s;
     opacity: 1;
