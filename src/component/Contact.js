@@ -51,8 +51,10 @@ function Contact() {
             onClick={() => "mailto:chalermkiat.js@gmail.com"}
           >
             <div>
-              <AiOutlineMail />
-              <p>G-mail</p>
+              <a href="mailto:chalermkiat.js@gmail.com">
+                <AiOutlineMail />
+                <p>G-mail</p>
+              </a>
             </div>
           </div>
           <div className="flex-items-contact">

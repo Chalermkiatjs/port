@@ -1,8 +1,8 @@
 import "./Production.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar";
+
+import Navwork from "./Navwork";
 import Footer from "./Footer";
-import Contact from "./Contact";
 
 function Production() {
   // const videoElements = videos.map((thumbnail, index) => {
@@ -126,7 +126,8 @@ function Production() {
 
   return (
     <>
-      <Navbar />
+      <Navwork />
+
       {/* MyQuest */}
       <div className="container px-4">
         <div style={{ margin: "5% 0", textAlign: "center" }}>
@@ -186,7 +187,7 @@ function Production() {
       {/* AmarinTV End*/}
 
       {/* MV&SF */}
-      <div className="container px-4">
+      <div className="container px-4" style={{ marginBottom: "5%" }}>
         <div style={{ margin: "5% 0", textAlign: "center" }}>
           <h1>Music Video & Short Film</h1>
         </div>
@@ -213,7 +214,7 @@ function Production() {
       </div>
       {/* MV&SF End*/}
 
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

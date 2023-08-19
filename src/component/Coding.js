@@ -1,8 +1,7 @@
 import "./Coding.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar";
+import Navwork from "./Navwork";
 import Footer from "./Footer";
-import Contact from "./Contact";
 
 function Coding() {
   const webProject = {
@@ -21,7 +20,7 @@ function Coding() {
 
   return (
     <>
-      <Navbar />
+      <Navwork />
 
       {/* Web project */}
 
@@ -62,7 +61,7 @@ function Coding() {
 
       {/* App inventor */}
 
-      <div className="container px-4" style={{ marginBottom: "10%" }}>
+      <div className="container px-4" style={{ marginBottom: "5%" }}>
         <div style={{ margin: "5% 0 ", textAlign: "center" }}>
           <h1>Vending Machine Android App</h1>
         </div>
@@ -110,7 +109,6 @@ function Coding() {
         </div>
       </div>
 
-      <Contact />
       <Footer />
     </>
   );

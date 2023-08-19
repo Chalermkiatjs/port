@@ -10,10 +10,10 @@ import Coding from "./component/Coding";
 import Production from "./component/Production";
 import Motion from "./component/motion";
 
-import Home from "./component/Home";
-import Contact from "./component/Contact";
-import Work from "./component/Work";
-import About from "./component/About";
+// import Home from "./component/Home";
+// import Contact from "./component/Contact";
+// import Work from "./component/Work";
+// import About from "./component/About";
 import Visual from "./component/Visual";
 
 const router = createBrowserRouter([
@@ -21,22 +21,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Homepage />,
   },
-  {
-    path: "home",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "work",
-    element: <Work />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
-  },
+
   {
     path: "production",
     element: <Production />,

@@ -1,8 +1,7 @@
 import "./Motion.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar";
+import Navwork from "./Navwork";
 import Footer from "./Footer";
-import Contact from "./Contact";
 
 function Motion() {
   const motion = [
@@ -29,9 +28,9 @@ function Motion() {
 
   return (
     <>
-      <Navbar />
+      <Navwork />
 
-      <div className="container px-4">
+      <div className="container px-4" style={{ marginBottom: "5%" }}>
         {motion.map((item) => (
           <>
             <div
@@ -48,7 +47,7 @@ function Motion() {
               style={{ position: "relative" }}
             >
               <a href={item.link}>
-                <img className="img-fluid" src={item.url} />
+                <img className="img-fluid" src={item.url} alt="" />
                 <div className="view-motion">
                   <button type="button" class="btn btn-outline-dark btn-lg">
                     View
@@ -60,7 +59,6 @@ function Motion() {
         ))}
       </div>
 
-      <Contact />
       <Footer />
     </>
   );

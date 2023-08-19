@@ -1,8 +1,7 @@
 import "./Visual.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar";
+import Navwork from "./Navwork";
 import Footer from "./Footer";
-import Contact from "./Contact";
 
 function Visual() {
   const visual = [
@@ -35,9 +34,9 @@ function Visual() {
 
   return (
     <>
-      <Navbar />
+      <Navwork />
 
-      <div className="container px-4">
+      <div className="container px-4" style={{ marginBottom: "5%" }}>
         {visual.map((item) => (
           <>
             <div style={{ margin: "5% 0", textAlign: "center" }}>
@@ -49,7 +48,7 @@ function Visual() {
               style={{ position: "relative" }}
             >
               <a href={item.link}>
-                <img className="img-fluid" src={item.url} />
+                <img className="img-fluid" src={item.url} alt="" />
                 <div className="view-visual">
                   <button type="button" class="btn btn-outline-dark btn-lg">
                     View
@@ -61,7 +60,6 @@ function Visual() {
         ))}
       </div>
 
-      <Contact />
       <Footer />
     </>
   );

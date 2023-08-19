@@ -25,7 +25,7 @@ function Profile() {
             <p>{aboutData.detail1}</p>
             <p>{aboutData.detail2}</p>
             <a
-              href="https://cdn.discordapp.com/attachments/1137658268920061954/1138404671350919228/Resume.png"
+              href="https://cdn.discordapp.com/attachments/1137658268920061954/1142444706593259560/Resume.png"
               className="press"
               rel="noopener noreferrer"
               target="_blank"

@@ -3,7 +3,7 @@ import "./Home.css";
 const textData = {
   title: "ABOUT THIS WEBSITE",
   about:
-    "This website has been created to showcase the work of Chalermkiat Jaisuk during studies. Additionally, it has been developed to enhance my skills in the field of web development. Through this project, I have utilized languages such as HTML, CSS, JavaScript, Bootstrap, and the React framework to further my abilities as a web developer.",
+    "This website has been created to showcase the work of Chalermkiat Jaisuk. Additionally, it has been developed to enhance my skills in the field of web development. Through this project, I have utilized languages such as HTML, CSS, JavaScript, Bootstrap, and the React framework to further my abilities as a web developer.",
 };
 
 function Home() {

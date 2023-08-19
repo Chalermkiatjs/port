@@ -1,9 +1,9 @@
 import "./Nav.css";
 import React, { useState } from "react";
-import { Link as LinkScroll } from "react-scroll";
+import { Link } from "react-router-dom";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
-function Navbar() {
+function Navwork() {
   // useState responsive navbar
   const [click, setClick] = useState(false);
 
@@ -11,56 +11,56 @@ function Navbar() {
     <section>
       <div className="nav-container">
         <div className="logo">
-          <LinkScroll
-            activeClass="active"
-            to="main"
-            spy={true}
-            style={{ color: "white" }}
-          >
+          <Link to="/" style={{ color: "white" }}>
             CHALERMKIAT
-          </LinkScroll>
+          </Link>
         </div>
 
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            <LinkScroll
-              activeClass="active"
-              to="main"
-              spy={true}
+            <Link
+              to="/"
               onClick={() => setClick(false)}
+              style={{ color: "white" }}
             >
               Home
-            </LinkScroll>
+            </Link>
           </li>
           <li>
-            <LinkScroll
-              activeClass="active"
-              to="about"
-              spy={true}
+            <Link
+              to="/coding"
               onClick={() => setClick(false)}
+              style={{ color: "white" }}
             >
-              About me
-            </LinkScroll>
+              Coding
+            </Link>
           </li>
           <li>
-            <LinkScroll
-              activeClass="active"
-              to="work"
-              spy={true}
+            <Link
+              to="/production"
               onClick={() => setClick(false)}
+              style={{ color: "white" }}
             >
-              My work
-            </LinkScroll>
+              Production
+            </Link>
           </li>
           <li>
-            <LinkScroll
-              activeClass="active"
-              to="contact"
-              spy={true}
+            <Link
+              to="/motion"
               onClick={() => setClick(false)}
+              style={{ color: "white" }}
             >
-              Contact
-            </LinkScroll>
+              Motion Graphics
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/visual"
+              onClick={() => setClick(false)}
+              style={{ color: "white" }}
+            >
+              Visual Effects
+            </Link>
           </li>
         </ul>
         <div className="menu-bar" onClick={() => setClick(!click)}>
@@ -71,4 +71,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navwork;
