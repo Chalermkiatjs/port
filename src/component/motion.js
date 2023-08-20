@@ -46,7 +46,7 @@ function Motion() {
               key={item.id}
               style={{ position: "relative" }}
             >
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <img className="img-fluid" src={item.url} alt="" />
                 <div className="view-motion">
                   <button type="button" class="btn btn-outline-dark btn-lg">

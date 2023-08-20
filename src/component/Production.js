@@ -199,7 +199,7 @@ function Production() {
               style={{ position: "relative" }}
             >
               <div>
-                <a href={item.vdo} target="_blank">
+                <a href={item.vdo} target="_blank" rel="noopener noreferrer">
                   <img className="img-fluid" src={item.url} alt="" />
                   <div className="view-product">
                     <button type="button" class="btn btn-outline-dark btn-lg">
