@@ -136,7 +136,7 @@ function Production() {
         <div className="row gx-5 row-cols-1 row-cols-lg-3 g-2 g-lg-3">
           {myQuest.map((item) => (
             <div className="col product-hover" key={item.id}>
-              <a href={item.vdo}>
+              <a href={item.vdo} target="_blank">
                 <div
                   style={{
                     marginBottom: "5% ",
@@ -166,7 +166,7 @@ function Production() {
           {amarinTV.map((item) => (
             <div className="col product-hover" key={item.id}>
               <div style={{ marginBottom: "5% ", position: "relative" }}>
-                <a href={item.vdo}>
+                <a href={item.vdo} target="_blank">
                   <img
                     className="img-fluid"
                     src={item.url}
@@ -199,7 +199,7 @@ function Production() {
               style={{ position: "relative" }}
             >
               <div>
-                <a href={item.vdo}>
+                <a href={item.vdo} target="_blank">
                   <img className="img-fluid" src={item.url} alt="" />
                   <div className="view-product">
                     <button type="button" class="btn btn-outline-dark btn-lg">

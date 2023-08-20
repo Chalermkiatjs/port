@@ -47,7 +47,7 @@ function Visual() {
               key={item.id}
               style={{ position: "relative" }}
             >
-              <a href={item.link}>
+              <a href={item.link} target="_blank">
                 <img className="img-fluid" src={item.url} alt="" />
                 <div className="view-visual">
                   <button type="button" class="btn btn-outline-dark btn-lg">
