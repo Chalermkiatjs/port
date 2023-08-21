@@ -3,7 +3,7 @@ import "./About.css";
 const aboutData = {
   title: "About me",
   detail1:
-    "Hello, my name is Chalermkiat Jaisuk I'm 22 years old and recently graduated from King Mongkut’s University of Technology Thonburi with a major in Applied Computer Science-Multimedia.",
+    "Hello, my name is Chalermkiat Jaisuk I'm 23 years old and recently graduated from King Mongkut’s University of Technology Thonburi with a major in Applied Computer Science-Multimedia.",
   detail2:
     "I am interested in working as a Frontend Developer with skills in HTML, CSS, JavaScript, and React. As a result, I have created this portfolio website to showcase my work.",
 };
