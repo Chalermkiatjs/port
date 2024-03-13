@@ -1,0 +1,48 @@
+.size{
+    height: 200px;
+    width: auto;
+
+}
+
+h1{
+    font-weight: bold;
+}
+
+.product-hover {
+    transition: 0.5s;
+}
+
+
+
+.view-product{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+
+.product-hover:hover {
+    cursor: pointer;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+.product-hover:hover img{
+    opacity: 0.7;
+}
+
+.product-hover:hover .view-product{
+
+    transition: 0.5s;
+    opacity: 1;
+
+}

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-about{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red;  */
+}
+
+.grid-container-about{
+    display: grid;
+    height: 600px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+}
+
+.grid-items-about{
+    display: block;
+    height: 100%;
+    width: auto;
+    color: black;
+    /* border: 1px solid red; */
+    
+}
+
+.grid-items-about:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-items-about:nth-child(2){
+    padding-top: 100px;
+    
+}
+
+.grid-items-about h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.grid-items-about p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding-right: 70px;
+}
+
+.grid-items-about a {
+    margin-left: 0;
+
+}
+
+.imgblock{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+.img-responsive{
+    display: block;
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgb(102, 102, 102);
+}
+
+.press{
+    border: 5px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.press:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    
+}
+
+@media screen and (max-width:1000px) {
+    
+    .grid-container-about{
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+
+    .grid-items-about img{
+        height: 400px;
+        
+    }
+
+    .grid-items-about {
+        margin-top: 40px;
+        text-align: center;
+        
+    }
+    
+    .grid-items-about p {
+        padding-left: 70px;
+    }
+
+    .grid-items-about:nth-child(2){
+        padding-top: 0;
+        
+    }
+
+}
+

@@ -1,0 +1,45 @@
+.size{
+    height: 200px;
+    width: auto;
+
+}
+
+h1{
+    font-weight: bold;
+}
+
+.motion-hover {
+    transition: 0.5s;
+}
+
+
+.view-motion{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.motion-hover:hover{
+    cursor: pointer;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+.motion-hover:hover img{
+    opacity: 0.7;
+}
+
+.motion-hover:hover .view-motion{
+
+    transition: 0.5s;
+    opacity: 1;
+
+}
