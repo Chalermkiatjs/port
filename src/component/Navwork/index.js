@@ -1,10 +1,9 @@
-import "../../CSS/nav.css";
+import "../../style/nav.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
-function Navwork() {
-  // useState responsive navbar
+function NavWork() {
   const [click, setClick] = useState(false);
 
   return (
@@ -71,4 +70,4 @@ function Navwork() {
   );
 }
 
-export default Navwork;
+export default NavWork;

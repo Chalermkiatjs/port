@@ -1,10 +1,9 @@
-import "../../CSS/nav.css";
+import "../../style/nav.css";
 import React, { useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
-function Navbar() {
-  // useState responsive navbar
+function NavBar() {
   const [click, setClick] = useState(false);
 
   return (
@@ -71,4 +70,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;

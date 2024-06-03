@@ -1,4 +1,4 @@
-import "../../CSS/work.css";
+import "../../style/work.css";
 import {
   HiCodeBracket,
   HiFilm,

@@ -1,11 +1,10 @@
-import "../../CSS/motion.css";
+import "../../style/motion.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navwork from "../../component/Navwork";
+import NavWork from "../../component/NavWork";
 import Footer from "../../component/Footer";
 
 function Motion() {
   const motion = [
-    //myQuest
     {
       id: 1,
       url: "https://cdn.discordapp.com/attachments/1141697331700432997/1141697407965474956/motion.jpg?ex=65fc1c11&is=65e9a711&hm=1b654fbfbd2ac7c177d2b8a6e4ecc9e48eb18fc52b20591a527fff2b52c56d54&",
@@ -28,7 +27,7 @@ function Motion() {
 
   return (
     <>
-      <Navwork />
+      <NavWork />
       <div className="container px-4" style={{ marginBottom: "5%" }}>
         {motion.map((item) => (
           <div key={item.id}>

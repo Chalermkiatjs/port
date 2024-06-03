@@ -1,13 +1,11 @@
-import Contact from "../component/Contact";
 import Footer from "../component/Footer";
-import Navbar from "../component/Navbar";
+import NavBar from "../component/NavBar";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <NavBar />
       {children}
-      <Contact />
       <Footer />
     </>
   );
