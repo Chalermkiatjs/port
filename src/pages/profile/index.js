@@ -1,4 +1,4 @@
-import "../../CSS/about.css";
+import "../../style/about.css";
 
 const aboutData = {
   title: "About me",
