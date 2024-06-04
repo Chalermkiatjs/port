@@ -1,21 +1,17 @@
-import "../../style/coding.css";
+import "../style/coding.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavWork from "../../component/NavWork";
-import Footer from "../../component/Footer";
-import { CodingConfig } from "../../config/CodingConfig";
-
-function Coding() {
+import { CodingConfig } from "../config/CodingConfig";
+const CodingPage = () => {
   return (
     <>
-      <NavWork />
       {CodingConfig.map((item) => (
-        <div className="container px-4">
+        <div key={item.name} className="container px-4">
           <div style={{ margin: "5% 0 ", textAlign: "center" }}>
             <h1>{item.title}</h1>
           </div>
           <div className="row justify-content-center">
             {item.images.map((image) => (
-              <div className="col code-hover">
+              <div key={image.alt} className="col code-hover">
                 <div
                   style={{
                     marginBottom: "3% ",
@@ -40,18 +36,20 @@ function Coding() {
                 {item.subtitle}
               </h2>
               <p>{item.description}</p>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={item.link}
+                target={item.type === "download" ? "_self" : "_blank"}
+                rel="noopener noreferrer"
+              >
                 <button type="button" className="btn btn-outline-dark">
-                  View the page
+                  {item.type === "download" ? "Download" : "View the page"}
                 </button>
               </a>
             </div>
           </div>
         </div>
       ))}
-      <Footer />
     </>
   );
-}
-
-export default Coding;
+};
+export default CodingPage;
