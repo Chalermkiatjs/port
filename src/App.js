@@ -1,20 +1,27 @@
 import "./style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Layout from "./layout";
-import Home from "./pages/home";
-import Profile from "./pages/profile";
-import Work from "./pages/work";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Navigations } from "./config/Navigations";
+import MainLayout from "./layout/MainLayout";
+import WorkLayout from "./layout/WorkLayout";
 function App(props) {
   console.log(props);
   return (
-    <>
-      <Layout>
-        <Home />
-        <Profile />
-        <Work />
-      </Layout>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {Navigations.map((navigation, index) =>
+          navigation.layout === "MainLayout" ? (
+            <Route key={index} element={<MainLayout />}>
+              <Route path={navigation.path} element={navigation.element} />
+            </Route>
+          ) : (
+            <Route key={index} element={<WorkLayout />}>
+              <Route path={navigation.path} element={navigation.element} />
+            </Route>
+          )
+        )}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

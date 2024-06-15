@@ -31,6 +31,7 @@ export const CodingConfig = [
         alt: "App Inventor Preview 3",
       },
     ],
+    type: "download",
     link: "",
     description:
       "The Vending Machine is an application designed for the Android operating system using MIT App Inventor. It allows users to interact with a virtual vending machine, offering various functions such as coin insertion, snack selection, change calculation, and the process of dispensing both change and selected snacks from the machine. The application's logic is built using visual programming blocks within the MIT App Inventor framework.",

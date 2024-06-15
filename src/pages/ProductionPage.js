@@ -1,14 +1,10 @@
-import "../../style/production.css";
+import "../style/production.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { ProductionConfig } from "../config/ProductionConfig";
 
-import NavWork from "../../component/NavWork";
-import Footer from "../../component/Footer";
-import { ProductionConfig } from "../../config/ProductionConfig";
-
-function Production() {
+const ProductionPage = () => {
   return (
     <>
-      <NavWork />
       {ProductionConfig.map((item) => (
         <div className="container px-4" key={item.name}>
           <div style={{ margin: "5% 0", textAlign: "center" }}>
@@ -20,6 +16,7 @@ function Production() {
                 <div className="col product-hover" key={image.alt}>
                   <a href={image.link} target="_blank" rel="noreferrer">
                     <div
+                      className="product-box-shadow"
                       style={{
                         marginBottom: "5% ",
                         position: "relative",
@@ -47,7 +44,7 @@ function Production() {
             <div className="row gx-5 g-2 g-lg-3">
               {item.images.map((image) => (
                 <div
-                  className="col product-hover"
+                  className="col product-hover "
                   key={image.alt}
                   style={{ position: "relative" }}
                 >
@@ -78,9 +75,7 @@ function Production() {
           )}
         </div>
       ))}
-      <Footer />
     </>
   );
-}
-
-export default Production;
+};
+export default ProductionPage;
