@@ -14,7 +14,9 @@ jobs:
       - name: install dependencies
         run: yarn install
       - name: build project
-        run: yarn build
+        run: |
+          yarn build
+          echo "::error file=src/layout/[FILENAME]::Build failed"
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
