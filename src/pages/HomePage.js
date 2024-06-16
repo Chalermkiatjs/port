@@ -1,6 +1,6 @@
-import "../style/home.css";
-import "../style/work.css";
-import "../style/about.css";
+import "style/home.css";
+import "style/work.css";
+import "style/about.css";
 import {
   HiCodeBracket,
   HiFilm,

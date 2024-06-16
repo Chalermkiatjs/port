@@ -1,4 +1,4 @@
-import "../../style/nav.css";
+import "style/nav.css";
 import React, { useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import { HiBars3, HiXMark } from "react-icons/hi2";

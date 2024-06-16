@@ -1,6 +1,6 @@
-import "../style/coding.css";
+import "style/coding.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { CodingConfig } from "../config/CodingConfig";
+import { CodingConfig } from "config/CodingConfig";
 const CodingPage = () => {
   return (
     <>

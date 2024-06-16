@@ -1,6 +1,6 @@
-import "../style/visual.css";
+import "style/visual.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { VisualConfig } from "../config/VisualConfig";
+import { VisualConfig } from "config/VisualConfig";
 
 const VisualPage = () => {
   return (

@@ -1,6 +1,6 @@
-import "../style/production.css";
+import "style/production.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ProductionConfig } from "../config/ProductionConfig";
+import { ProductionConfig } from "config/ProductionConfig";
 
 const ProductionPage = () => {
   return (

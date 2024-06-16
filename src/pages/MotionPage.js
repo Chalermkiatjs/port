@@ -1,6 +1,6 @@
-import "../style/motion.css";
+import "style/motion.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { MotionConfig } from "../config/MotionConfig";
+import { MotionConfig } from "config/MotionConfig";
 
 const MotionPage = () => {
   return (
