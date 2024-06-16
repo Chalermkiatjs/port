@@ -1,5 +1,5 @@
-import "../../style/footer.css";
-import "../../style/contact.css";
+import "style/footer.css";
+import "style/contact.css";
 import {
   SlSocialFacebook,
   SlSocialGithub,

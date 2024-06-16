@@ -1,4 +1,4 @@
-import "../../style/nav.css";
+import "style/nav.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiBars3, HiXMark } from "react-icons/hi2";
