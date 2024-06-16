@@ -12,8 +12,16 @@ jobs:
         working-directory: ./src
     steps:
       - uses: actions/checkout@v3
+       - name: Set up Node.js
+         uses: actions/setup-node@v2
+          with:
+            node-version: '14'
       - name: install dependencies
         run: yarn install
+      - name: Check installed modules
+        run: ls node_modules
+      - name: list files in component directory
+        run: ls -la src/component/
       - name: build project
         run: |
           yarn build
