@@ -29,11 +29,7 @@ const HomePage = () => {
       <div className="container-about" id="about">
         <div className="grid-container-about">
           <div className="grid-items-about">
-            <img
-              src="https://cdn.discordapp.com/attachments/1137658268920061954/1137658298066276422/me.jpg?ex=65ffdf5a&is=65ed6a5a&hm=cda638884f1b03aa4a92555f4b9027f70145eac919c6e891ebe678b21594247d&"
-              alt="Me"
-              className="img-responsive"
-            />
+            <img src="/images/me/me.jpg" alt="Me" className="img-responsive" />
           </div>
           <div className="grid-items-about">
             <h1 style={{ fontSize: 50 }}>About me</h1>
@@ -52,7 +48,7 @@ const HomePage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Resume
+              CV
             </a>
           </div>
         </div>
