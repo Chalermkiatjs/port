@@ -32,24 +32,27 @@ const HomePage = () => {
             <img src="/images/me/me.jpg" alt="Me" className="img-responsive" />
           </div>
           <div className="grid-items-about">
-            <h1 style={{ fontSize: 50 }}>About me</h1>
+            <h1 style={{ fontSize: 50, marginBottom:24 }}>About me</h1>
             <p>
-              Hello, my name is Chalermkiat Jaisuk I'm 23 years old and
+              Hello, my name is <strong>Chalermkiat Jaisuk</strong> I'm 23 years old and
               graduated from King Mongkut’s University of Technology Thonburi
               with a major in Applied Computer Science-Multimedia.
             </p>
             <p>
-              I am interested in working as a Frontend Developer with skills in
-              HTML, CSS, JavaScript, React.js and Next.js.
+              I am a <strong>Front-End Developer</strong> with experience in building a web
+              applications for the digital financial company. Proficient in
+              Javascript frameworks like Next.js and component libraries such as
+              a Material UI, and eager to develop my skills to become a
+              Full-Stack Developer.
             </p>
-            <a
+            {/* <a
               href="https://cdn.discordapp.com/attachments/1217507447510401064/1217507853779075172/CV.png?ex=6604478c&is=65f1d28c&hm=abf02aa6ba4eaa0434bc784f88a083272fb49d37b0d4084c61f872fc60a88cac&"
               className="press"
               rel="noopener noreferrer"
               target="_blank"
             >
               CV
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
